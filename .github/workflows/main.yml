@@ -12,3 +12,4 @@ jobs:
         uses: npmaile/kebab-case-validator@master
         with:
           find_regex: '.*'
+          exclude_regex: '\(Dockerfile\)\|\(\.\)\|\(.*\.git.*\)'
