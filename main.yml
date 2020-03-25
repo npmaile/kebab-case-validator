@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  test:
+    
+    runs-on: [ubuntu-latest]
+    name: kebab caser
+    steps:
+      - uses: actions/checkout@master
+      - name: kebab caser
+        id: kebab
+        uses: npmaile-kebab-case-validator
+        with:
+          find_regex: '.*'
