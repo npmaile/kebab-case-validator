@@ -9,6 +9,6 @@ jobs:
       - uses: actions/checkout@master
       - name: kebab caser
         id: kebab
-        uses: npmaile-kebab-case-validator
+        uses: npmaile/kebab-case-validator
         with:
           find_regex: '.*'
